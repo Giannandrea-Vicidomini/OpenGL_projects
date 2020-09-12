@@ -5,7 +5,7 @@
 
 int main(void){
 
-    Window w(800,600,"A MARONN");
+    Window w(800,600,"APP");
     glewInit();
     glewExperimental = true;
     glEnable(GL_DEPTH_TEST);
