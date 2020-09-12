@@ -8,7 +8,7 @@ using namespace std;
 using namespace glm;
 
 int main(void){
-    Window w(800,600,"Dio Bestia");
+    Window w(800,600,"APP");
     glewInit();
     glewExperimental = true;
 
@@ -94,8 +94,8 @@ int main(void){
 
     GLuint program2 = createProgram("./shaders/vs.glsl","./shaders/fs.glsl");
 
-    GLuint dioLoc=glGetUniformLocation(program2,"projectMat");
-    GLuint caneLoc=glGetUniformLocation(program2,"viewMat");
+    GLuint aLoc=glGetUniformLocation(program2,"projectMat");
+    GLuint bLoc=glGetUniformLocation(program2,"viewMat");
 
     float wave;
   
@@ -119,8 +119,8 @@ int main(void){
         
         glDrawArrays(GL_TRIANGLES,0,3);
         glUseProgram(program2);
-        glUniformMatrix4fv(dioLoc,1,GL_FALSE,value_ptr(proj));
-        glUniformMatrix4fv(caneLoc,1,GL_FALSE,value_ptr(view));
+        glUniformMatrix4fv(aLoc,1,GL_FALSE,value_ptr(proj));
+        glUniformMatrix4fv(bLoc,1,GL_FALSE,value_ptr(view));
         glDrawArrays(GL_POINTS,0,2);
 
 

@@ -4,7 +4,7 @@ using namespace std;
 
 int main(void){
 
-    Window w(800,600,"NGUL A MARONN");
+    Window w(800,600,"App");
     glewInit();
 
     float pos[]={
@@ -51,7 +51,7 @@ int main(void){
 
         glDrawArrays(GL_TRIANGLES,0,3);
 
-        w.poll();
+        w.update();
          
     }
 

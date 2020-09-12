@@ -31,7 +31,7 @@ int main(void)
     glewExperimental = GL_TRUE;
     if (glewInit() != GLEW_OK)
     {
-        fprintf(stderr,"dioniso\n");
+        fprintf(stderr,"looooog\n");
         exit(EXIT_FAILURE);
     }
     

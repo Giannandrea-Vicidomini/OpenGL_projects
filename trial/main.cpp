@@ -6,7 +6,7 @@
 using namespace std;
 
 int main(void){
-    Window w(800,600,"Dio Bestia");
+    Window w(800,600,"App");
     glewInit();
     glewExperimental = true;
 
